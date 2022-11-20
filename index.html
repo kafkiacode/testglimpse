@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glimpse Title</title>
+  <style>
+    p {margin:0;}
+  </style>
+</head>
+
+<body>
+  <h1>Title (static)</h1>
+  <script>
+    let limit = 10;
+    const interval = 500;
+    document.body.innerHTML += '<p>First script call</p>';
+    for (let i = 0; i < limit; i++) {
+      const ii = i;
+      window.setTimeout(() => {
+        document.body.innerHTML += `<p>Addition ${ii}`;
+      }, i * interval);
+    }
+    window.setTimeout
+  </script>
+</body>
+
+</html>
